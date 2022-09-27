@@ -74,23 +74,3 @@ counts = job.result().get_counts()
 plot_histogram(counts)
 pt.show()
 print(qc)
-#qc.draw(output='mpl')
-
-
-
-'''IBMQ.load_account()
-provider = IBMQ.get_provider("ibm-q")
-qcomp = provider.get_backend('ibm_oslo')
-
-
-from qiskit.tools.monitor import job_monitor
-job = execute(qc, backend=qcomp)
-job_monitor(job)
-
-results = job.result()
-answer = results.get_counts(qc)
-plot_histogram(answer)'''
-
-
-
-
