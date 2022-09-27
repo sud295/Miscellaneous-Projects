@@ -1,7 +1,3 @@
-# A simplfication of the reverse phonebook problem
-# Phonebook only has 16 numbers & each phone number has some unique starting 2 digits ranging from 00 to 15
-# Task is to find name corresponding to the phone number starting with 15
-
 from qiskit import QuantumCircuit, assemble, Aer, execute, transpile
 from qiskit.visualization import plot_histogram
 import numpy as np
