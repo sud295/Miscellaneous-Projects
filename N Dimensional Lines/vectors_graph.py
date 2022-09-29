@@ -1,5 +1,6 @@
 from Equation import*
 import numpy as np
+from matplotlib import projections, pyplot as plt
 
 points = []
 w = int(input("Dimension? "))
@@ -26,4 +27,24 @@ for i in range(len(points)-1):
     modPoints.append(m)
 
 for i in modPoints:
-    print(i, " r(1) = ", i.getPoint(1))
+    print(i, " r(0) = ", i.getPoint(0), " r(1) = ", i.getPoint(1))
+print()
+
+if(input("Define Line Points?: ") == "y"):
+    cList = []
+    for i in range(len(modPoints)):
+        for j in range(11):
+            cList.append(modPoints[i].getPoint(j/10))
+
+    if(w == 3 and input("Show?: ") == "y"):
+        x, y, z= zip(*cList)
+        graph = plt.axes(projection="3d")
+        graph.scatter(x,y,z)
+        graph.plot(x,y,z)
+        plt.show()
+    
+    elif(w == 2 and input("Show?: ") == "y"):
+        x, y= zip(*cList)  
+        plt.scatter(x,y)
+        plt.plot(x,y)
+        plt.show()
