@@ -1,2 +1,2 @@
 # Projects
-General repositories with some of my projects
+General repository with select projects ranging from Grover, to Java fundementals and Python
