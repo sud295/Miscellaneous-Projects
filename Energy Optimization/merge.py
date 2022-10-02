@@ -9,16 +9,6 @@ with open("House_2_TS copy/channel_1(TimeStamp).csv", 'r') as csvfile:
         row.replace("\n", "")
         lis.append(row)
 
-# lis1 = []
-# with open("House_2_Power copy/channel_1(Power).csv", 'r') as csvfile:
-#     for row in csvfile:
-        
-#         row.replace(" ", "")
-#         row.replace("\n", "")
-#         #row.zfill(4)
-#         row = row[:-1]
-#         lis1.append(row)
-
 lis2 = []
 with open("House_2_Power copy/channel_2(Power).csv", 'r') as csvfile:
     for row in csvfile:
@@ -195,17 +185,12 @@ with open("House_2_Power copy/channel_19(Power).csv", 'r') as csvfile:
         
         row.replace(" ", "")
         row.replace("\n", "")
-        #row.zfill(4)
         row = row[:-1]
         lis19.append(row)
-
-
 
 output = open("House_2_ALLN.csv", 'a')
 writer = csv.writer(output)
 for i in range(len(lis)):
-    # a = ([lis[i]]) 
-    # a += ([lis1[i]])
     a = ([lis2[i]])
     a += ([lis3[i]])
     a += ([lis4[i]])
