@@ -10,6 +10,7 @@ import time
 import sklearn
 from sklearn import model_selection
 import matplotlib.pyplot as plt
+import pandas as pd
 
 st = time.time()
 
