@@ -1,3 +1,6 @@
+'''
+This file converts the .dat UKDALE files to a more easily manageable .CSV format
+'''
 #Power
 for j in range(16,20):
     output = open(f"House_2_Power/channel_{j}(POWER).csv", 'a')
