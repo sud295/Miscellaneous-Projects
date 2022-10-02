@@ -8,11 +8,16 @@ from sklearn import preprocessing
 from sklearn import metrics, linear_model,gaussian_process, isotonic,neural_network
 import matplotlib.pyplot as plt
 
-
-#clf = RandomForestClassifier(n_estimators=2)
-#clf = svm.SVC(gamma=0.001, C=100)
-#clf = linear_model.LinearRegression()
-clf = neural_network.MLPRegressor()
+userAnswer = input("Use which model?: ") # Allows user to choose the model to compare results
+if(userAnswer == "nueral"):
+    clf = neural_network.MLPRegressor()
+elif(userAnswer == "linear"):
+    clf = linear_model.LinearRegression()
+elif(userAnswer == "svm"):
+    clf = svm.SVC(gamma=0.001, C=100)
+else(userAnswer == "random"):
+    clf = RandomForestClassifier(n_estimators=2)
+    
 print("Created Model\n")
 
 data = pd.read_csv("House_2_ALL.csv")
@@ -48,13 +53,9 @@ for i in range(len(pred)):
     act_list.append(Y_test[i])
     x_list.append(couter)
 
-
-
 print((clf.score(X_test, Y_test))*100)
-
 
 plt.plot(x_list,act_list, label = "Target")
 plt.plot(x_list,pred_list, label = "Prediction", linewidth = 0.4)
 plt.legend()
 plt.show()
-
