@@ -15,7 +15,7 @@ elif(userAnswer == "linear"):
     clf = linear_model.LinearRegression()
 elif(userAnswer == "svm"):
     clf = svm.SVC(gamma=0.001, C=100)
-else(userAnswer == "random"):
+else:
     clf = RandomForestClassifier(n_estimators=2)
     
 print("Created Model\n")
