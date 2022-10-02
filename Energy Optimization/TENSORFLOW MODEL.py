@@ -1,3 +1,6 @@
+'''
+This file creates and traines a neural network. The model can then be loaded in the Trained_TF.py file to be tested.
+'''
 import tensorflow as tf
 import numpy as np
 import pandas as pd
