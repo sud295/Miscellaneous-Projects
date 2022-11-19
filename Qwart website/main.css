@@ -1,0 +1,41 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 75;
+    letter-spacing: 7px;
+
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+
+p{
+    font-size: 100px;
+    text-align: center;
+}
+
+.light-theme {
+    color: #000000;
+    background: white;
+  }
+
+.dark-theme {
+    color: white;
+    background: black;
+  }
+
+iframe {
+    border: 1px solid blue;
+    width: 100%;
+    align-content: center;
+}
