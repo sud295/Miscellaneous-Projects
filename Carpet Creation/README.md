@@ -1,7 +1,7 @@
 # Carpet Creation
 Prints out a carpet using characters and only 1 character per print statement.
 
-##Example:
+## Example:
 ```
 .....................
 .....................
