@@ -1,2 +1,2 @@
 # Projects
-General repository with select projects ranging from Grover, to Java fundementals and Machine Learning
+General repository with miscellaneous projects ranging from Grover, to Java fundementals and Machine Learning
